@@ -11,3 +11,5 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/joelc/Documents/Studium/ECS/digital/git_testat/RGB_Farbmischer/RGB_Farbmischer.xpr
+add_files -norecurse C:/Users/joelc/Documents/Studium/ECS/digital/4_uebungen/testat/testat.srcs/sources_1/new/pwm_led_top.vhd
+import_files C:/Users/joelc/Documents/Studium/ECS/digital/4_uebungen/testat/testat.srcs/sources_1/new/pwm_led_top.vhd
