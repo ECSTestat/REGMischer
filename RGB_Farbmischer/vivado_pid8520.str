@@ -1,0 +1,83 @@
+/*
+
+Vivado v2016.3 (64-bit)
+SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+Process ID: 8520
+
+Current time: 	4/26/18 5:09:06 PM CEST
+Time zone: 	Central European Time (Europe/Berlin)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1280x853
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.3/tps/win64/jre
+
+User name: 	joelc
+User home directory: C:/Users/joelc
+User working directory: C:/Users/joelc/Documents/Studium/ECS/digital/git_testat/RGB_Farbmischer
+User country: 	CH
+User language: 	de
+User locale: 	de_CH
+
+RDI base root directory: C:/Xilinx/Vivado
+RDI data directory: C:/Xilinx/Vivado/2016.3/data
+RDI bin directory: C:/Xilinx/Vivado/2016.3/bin
+
+Vivado preferences path: C:/Users/joelc/AppData/Roaming/Xilinx/Vivado/2016.3/vivado.ini
+Vivado layouts directory: C:/Users/joelc/AppData/Roaming/Xilinx/Vivado/2016.3/layouts
+
+GUI allocated memory:	192 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 400 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 60 MB (+60385kb) [00:00:17]
+// [Engine Memory]: 373 MB (+239876kb) [00:00:17]
+// TclEventType: PROJECT_OPEN_DIALOG
+// bt:g (cd:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\joelc\Documents\Studium\ECS\digital\git_testat\RGB_Farbmischer\RGB_Farbmischer.xpr. Version: Vivado v2016.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/joelc/Documents/Studium/ECS/digital/git_testat/RGB_Farbmischer/RGB_Farbmischer.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/joelc/Documents/Studium/ECS/digital/git_testat/RGB_Farbmischer/RGB_Farbmischer.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Tech_Unterlagen/ECS_Projekt/RGB_Farbmischer' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [Engine Memory]: 405 MB (+13338kb) [00:00:22]
+// HMemoryUtils.trashcanNow. Engine heap size: 405 MB. GUI used memory: 27 MB. Current time: 4/26/18 5:09:09 PM CEST
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 431 MB (+6645kb) [00:00:24]
+// [Engine Memory]: 455 MB (+2260kb) [00:00:26]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 700.293 ; gain = 76.508 
+// Project name: RGB_Farbmischer; location: C:/Users/joelc/Documents/Studium/ECS/digital/git_testat/RGB_Farbmischer; part: xc7z010clg400-1
+// TclEventType: DG_UPDATE_GRAPH
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 25 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 1); // y:i (D:JPanel, cd:JFrame)
+// PAPropertyPanels.initPanels (RGB_Farbmischer.xdc) elapsed time: 0.5s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, RGB_Farbmischer.xdc]", 3, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, RGB_Farbmischer.xdc]", 3, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 484 MB. GUI used memory: 32 MB. Current time: 4/26/18 5:09:49 PM CEST
+selectCodeEditor("RGB_Farbmischer.xdc", 17, 90); // bF:I (JPanel:JComponent, cd:JFrame)
+// [Engine Memory]: 487 MB (+9961kb) [00:01:05]
+// TclEventType: FILE_SET_CHANGE
