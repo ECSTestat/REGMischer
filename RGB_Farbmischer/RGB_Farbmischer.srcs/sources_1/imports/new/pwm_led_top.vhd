@@ -79,7 +79,7 @@ architecture struct of pwm_led_top is
     port (
         rst_pi       : in  std_logic;
         clk_pi       : in  std_logic;
-        enc_sync_pi  : in  std_logic_vector(1 downto 0);
+        deb_enc_pi   : in  std_logic_vector(1 downto 0);
         dim_down_po  : out std_logic;
         dim_up_po    : out std_logic
         ); 
@@ -132,7 +132,7 @@ begin
       clk_pi       => clk_pi ,
       enc_pi       => enc_pi ,
       act_pi       => act_pi ,
-      enc_sync_po  => enc_sync,
+      deb_enc_po   => enc_sync,
       act_sync_po  => act_sync
       );
       
@@ -141,7 +141,7 @@ begin
     port map (
       rst_pi       => rst_loc,
       clk_pi       => clk_pi ,
-      enc_sync_pi  => enc_sync,
+      deb_enc_pi   => enc_sync,
       dim_down_po  => dim_down,
       dim_up_po    => dim_up
       );
