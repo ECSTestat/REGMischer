@@ -2,18 +2,12 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Thu Apr 26 17:08:24 2018
-# Process ID: 8520
-# Current directory: C:/Users/joelc/Documents/Studium/ECS/digital/git_testat/RGB_Farbmischer
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12608 C:\Users\joelc\Documents\Studium\ECS\digital\git_testat\RGB_Farbmischer\RGB_Farbmischer.xpr
-# Log file: C:/Users/joelc/Documents/Studium/ECS/digital/git_testat/RGB_Farbmischer/vivado.log
-# Journal file: C:/Users/joelc/Documents/Studium/ECS/digital/git_testat/RGB_Farbmischer\vivado.jou
+# Start of session at: Sat Apr 28 13:49:08 2018
+# Process ID: 2428
+# Current directory: C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11456 C:\Tech_Unterlagen\ECS_Testat\RGB_Farbmischer\RGB_Farbmischer.xpr
+# Log file: C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/vivado.log
+# Journal file: C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/joelc/Documents/Studium/ECS/digital/git_testat/RGB_Farbmischer/RGB_Farbmischer.xpr
-add_files -norecurse C:/Users/joelc/Documents/Studium/ECS/digital/4_uebungen/testat/testat.srcs/sources_1/new/pwm_led_top.vhd
-import_files C:/Users/joelc/Documents/Studium/ECS/digital/4_uebungen/testat/testat.srcs/sources_1/new/pwm_led_top.vhd
-close [ open C:/Users/joelc/Documents/Studium/ECS/digital/git_testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/Rstsync.vhd w ]
-add_files C:/Users/joelc/Documents/Studium/ECS/digital/git_testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/Rstsync.vhd
-close [ open C:/Users/joelc/Documents/Studium/ECS/digital/git_testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/Sync.vhd w ]
-add_files C:/Users/joelc/Documents/Studium/ECS/digital/git_testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/Sync.vhd
+oopen_project C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.xpr
