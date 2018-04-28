@@ -13,3 +13,44 @@ start_gui
 open_project C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.xpr
 close [ open C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/Ctrl.vhd w ]
 add_files C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/Ctrl.vhd
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1

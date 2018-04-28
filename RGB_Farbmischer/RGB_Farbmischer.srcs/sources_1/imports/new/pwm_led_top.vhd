@@ -167,7 +167,8 @@ begin
   port map (     
          rst_pi       => rst_loc,
          clk_pi       => clk_pi ,
-         led_value_pi => led_value_r
+         led_value_pi => led_value_r,
+         led_po       => led_po(0)
          );
   --instance "pwm_dac_GREEN"
   u_pwm_dac_g: pwm_dac
@@ -178,7 +179,8 @@ begin
   port map (     
      rst_pi       => rst_loc,
      clk_pi       => clk_pi ,
-     led_value_pi => led_value_g
+     led_value_pi => led_value_g,
+     led_po       => led_po(1)
    );
    --instance "pwm_dac_BLUE"
  u_pwm_dac_b: pwm_dac
@@ -189,6 +191,7 @@ begin
   port map (     
      rst_pi       => rst_loc,
      clk_pi       => clk_pi ,
-     led_value_pi => led_value_b
+     led_value_pi => led_value_b,
+     led_po       => led_po(2)
             );
 end struct;

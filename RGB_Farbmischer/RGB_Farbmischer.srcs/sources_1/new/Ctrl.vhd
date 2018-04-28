@@ -36,7 +36,7 @@ entity Ctrl is
  port (
   rst_pi       : in  std_logic;
   clk_pi       : in  std_logic;
-  enc_sync_pi  : in std_logic_vector(1 downto 0);
+  deb_enc_pi   : in std_logic_vector(1 downto 0);
   dim_down_po  : out std_logic;
   dim_up_po    : out std_logic
   );
@@ -54,7 +54,7 @@ begin
 -- Outputs: enc_rot
 -----------------------------------------------------------------------------
 -- memoryless process
-P_fsm_com : process (c_st, enc_sync_pi)
+P_fsm_com : process (c_st, deb_enc_pi)
 begin
   -- default assignments
   n_st    <= c_st;      -- remain in current state
@@ -63,32 +63,32 @@ begin
   -- specific assignments
   case c_st is
     when s_start =>
-      case enc_sync_pi is
+      case deb_enc_pi is
         when "00"   => n_st <= s_0;
         when "01"   => n_st <= s_3;
         when "10"   => n_st <= s_1;
         when others => n_st <= s_2;
       end case;
     when s_0 =>
-      case enc_sync_pi is
+      case deb_enc_pi is
         when "01"   => n_st <= s_3; 
         when "10"   => n_st <= s_1; 
         when others => null;
       end case;
     when s_1 =>
-      case enc_sync_pi is
+      case deb_enc_pi is
         when "00"   => n_st <= s_0; dim_down_po <= '1';
         when "11"   => n_st <= s_2; 
         when others => null;
       end case;
     when s_2 =>
-      case enc_sync_pi is
+      case deb_enc_pi is
         when "10"   => n_st <= s_1; 
         when "01"   => n_st <= s_3; 
         when others => null;
       end case;
     when s_3 =>
-      case enc_sync_pi is
+      case deb_enc_pi is
         when "11"   => n_st <= s_2; 
         when "00"   => n_st <= s_0; dim_up_po <= '1';
         when others => null;
