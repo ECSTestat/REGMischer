@@ -70,7 +70,7 @@ architecture struct of pwm_led_top is
         rst_pi       : in  std_logic;
         clk_pi       : in  std_logic;
         enc_pi       : in  std_logic_vector(1 downto 0);                    
-        enc_sync_po  : out std_logic_vector(1 downto 0);
+        deb_enc_po   : out std_logic_vector(1 downto 0);
         act_pi       : in  std_logic_vector(2 downto 0);
         act_sync_po  : out std_logic_vector(2 downto 0)
         );

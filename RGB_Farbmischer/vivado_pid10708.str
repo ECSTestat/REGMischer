@@ -1,0 +1,363 @@
+/*
+
+Vivado v2016.3 (64-bit)
+SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+Process ID: 10708
+
+Current time: 	4/28/18 2:37:06 PM CEST
+Time zone: 	Central European Time (Europe/Berlin)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1600x900
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.3/tps/win64/jre
+
+User name: 	mario
+User home directory: C:/Users/mario
+User working directory: C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer
+User country: 	CH
+User language: 	de
+User locale: 	de_CH
+
+RDI base root directory: C:/Xilinx/Vivado
+RDI data directory: C:/Xilinx/Vivado/2016.3/data
+RDI bin directory: C:/Xilinx/Vivado/2016.3/bin
+
+Vivado preferences path: C:/Users/mario/AppData/Roaming/Xilinx/Vivado/2016.3/vivado.ini
+Vivado layouts directory: C:/Users/mario/AppData/Roaming/Xilinx/Vivado/2016.3/layouts
+
+GUI allocated memory:	190 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 457 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Tech_Unterlagen\ECS_Testat\RGB_Farbmischer\RGB_Farbmischer.xpr. Version: Vivado v2016.3 
+// bt:g (cd:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 64 MB (+64292kb) [00:00:05]
+// [Engine Memory]: 419 MB (+288135kb) [00:00:05]
+// [GUI Memory]: 72 MB (+5308kb) [00:00:05]
+// [Engine Memory]: 452 MB (+12112kb) [00:00:05]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'. 
+// Project name: RGB_Farbmischer; location: C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 476 MB. GUI used memory: 32 MB. Current time: 4/28/18 2:37:08 PM CEST
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 478 MB (+3255kb) [00:00:08]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pwm_led_top - struct (pwm_led_top.vhd)]", 1); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pwm_led_top - struct (pwm_led_top.vhd), u_ctrl - Ctrl]", 4, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pwm_led_top - struct (pwm_led_top.vhd), u_ctrl - Ctrl]", 4, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cd:JFrame): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a:JRadioButton (JPanel:JComponent, b:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 4 seconds
+dismissDialog("Add Sources"); // b:g (cd:JFrame)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cd:JFrame): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_AND_NETLIST_FILES_OR_DIRECTORIES, "Add or create design sources"); // a:JRadioButton (JPanel:JComponent, b:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (C:JPanel, b:g)
+dismissFileChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a:JButton (C:JPanel, b:g)
+// F:q (b:g): Create Source File: addNotify
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "VHDL", 3); // bS:e (JPanel:JComponent, F:q)
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "Ctrl"); // ak:JTextField (JPanel:JComponent, F:q)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, F:q)
+dismissDialog("Create Source File"); // F:q (b:g)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 17 seconds
+dismissDialog("Add Sources"); // b:g (cd:JFrame)
+// Tcl Message: close [ open C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/Ctrl.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/Ctrl.vhd 
+// I:q (cd:JFrame): Define Module: addNotify
+// [Engine Memory]: 511 MB (+9758kb) [00:00:43]
+// HMemoryUtils.trashcanNow. Engine heap size: 511 MB. GUI used memory: 33 MB. Current time: 4/28/18 2:37:43 PM CEST
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, I:q)
+// TclEventType: DG_GRAPH_STALE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // BasicOptionPaneUI$ButtonFactory:JButton (JPanel:JComponent, G:JDialog)
+dismissDialog("Define Module"); // I:q (cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pwm_led_top - struct (pwm_led_top.vhd), u_sync - Sync - rtl (Sync.vhd)]", 3, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pwm_led_top - struct (pwm_led_top.vhd), u_sync - Sync - rtl (Sync.vhd)]", 3, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectCodeEditor("Sync.vhd", 596, 146); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Sync.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 535 MB. GUI used memory: 35 MB. Current time: 4/28/18 2:38:03 PM CEST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pwm_led_top - struct (pwm_led_top.vhd), u_ctrl - Ctrl - Behavioral (Ctrl.vhd)]", 4, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pwm_led_top - struct (pwm_led_top.vhd), u_ctrl - Ctrl - Behavioral (Ctrl.vhd)]", 4, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pwm_led_top - struct (pwm_led_top.vhd)]", 1, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pwm_led_top - struct (pwm_led_top.vhd)]", 1, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pwm_led_top - struct (pwm_led_top.vhd)]", 1); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pwm_led_top - struct (pwm_led_top.vhd), u_ctrl - Ctrl - Behavioral (Ctrl.vhd)]", 4, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pwm_led_top - struct (pwm_led_top.vhd), u_ctrl - Ctrl - Behavioral (Ctrl.vhd)]", 4, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("Ctrl.vhd", 136, 277); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Ctrl.vhd", 136, 277, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("Ctrl.vhd", 48, 369); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Ctrl.vhd", 48, 369, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("Ctrl.vhd", 185, 351); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 76 MB (+89kb) [00:07:23]
+// [GUI Memory]: 80 MB (+452kb) [00:11:41]
+// Elapsed time: 594 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pwm_led_top - struct (pwm_led_top.vhd), u_sync - Sync - rtl (Sync.vhd)]", 3, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pwm_led_top - struct (pwm_led_top.vhd), u_sync - Sync - rtl (Sync.vhd)]", 3, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+// Elapsed time: 18 seconds
+selectCodeEditor("Sync.vhd", 381, 246); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Sync.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 24, 265); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 124 seconds
+selectCodeEditor("Sync.vhd", 36, 392); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("Sync.vhd", 41, 387); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Sync.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 29, 248); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 156, 220); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 82, 317); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 118, 382); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Sync.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 16, 379); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 88, 281); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 65, 279); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("Sync.vhd", 143, 41); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 143, 41, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Sync.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 171, 93); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 171, 93, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Sync.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 198, 41); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 198, 41, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Sync.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 215, 194); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 215, 194, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Sync.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 239, 238); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 164, 195); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 164, 195, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Sync.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 109, 230); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 109, 230, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Sync.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 29 seconds
+selectCodeEditor("Sync.vhd", 41, 77); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 41, 77, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("Sync.vhd", 44, 78); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 42, 81); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 42, 81, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("Sync.vhd", 42, 81); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 42, 81, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("Sync.vhd", 42, 81); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 355, 77); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("Sync.vhd", 103, 80); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Sync.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 109, 90); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 94, 91); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Sync.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 398, 87); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 9, 74); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 53, 77); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 28, 76); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 1, 76); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 13, 74); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Sync.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 349, 266); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Sync.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 144, 286); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 36, 272); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 33, 265); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 33, 265, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Sync.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 12, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Sync.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 137, 179); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 473, 121); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 88, 171); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 88, 171); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 88, 171, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Sync.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// [GUI Memory]: 84 MB (+374kb) [00:16:58]
+selectCodeEditor("Sync.vhd", 359, 74); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 70, 247); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 70, 247, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Sync.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 89, 58); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 89, 58, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Sync.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 68, 247); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 68, 247, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Sync.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 68, 264); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 68, 264, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Sync.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 339, 116); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 76 seconds
+selectCodeEditor("Sync.vhd", 227, 178); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 226, 178, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 31 seconds
+selectCodeEditor("Sync.vhd", 79, 132); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 79, 132, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("Sync.vhd", 39, 36); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 39, 36, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Sync.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 216, 181); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 216, 181, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Sync.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 282, 210); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 198, 180); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Sync.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 189, 227); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Sync.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 348, 244); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 348, 244, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("Sync.vhd", 361, 250); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 348, 146); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 348, 146, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// Elapsed time: 23 seconds
+selectCodeEditor("Sync.vhd", 127, 189); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Sync.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 200, 181); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 538 MB (+2181kb) [00:20:45]
+// Elapsed time: 48 seconds
+selectCodeEditor("Sync.vhd", 13, 196); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Sync.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 197, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 284, 203); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("Sync.vhd", 121, 261); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 218, 264); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 271, 266); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 250, 263); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Sync.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 245, 261); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Sync.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 145, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+// [GUI Memory]: 89 MB (+977kb) [00:21:36]
+selectCodeEditor("Sync.vhd", 23, 282); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 108, 262); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 108, 262, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Sync.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 86, 163); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 97, 165); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 81, 161); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 88, 162); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Sync.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 197, 300); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Sync.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 187, 352); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Sync.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 89, 184); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 89, 184, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Sync.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 12, 79); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Sync.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 155, 75); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Sync.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 44, 77); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 44, 77, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Sync.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 209, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 209, 182, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Sync.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 228, 214); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 228, 214, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Sync.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 316, 283); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("Sync.vhd", 53, 124); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 53, 124, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Sync.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 79, 319); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 79, 319, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Sync.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 479, 161); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 83, 216); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 83, 216, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Sync.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 210, 279); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 166 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Ctrl.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Sync.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("Sync.vhd", 54, 317); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 54, 317, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor("Sync.vhd", 44, 281); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Sync.vhd", 44, 281, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "Sync.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pwm_led_top - struct (pwm_led_top.vhd)]", 1, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, pwm_led_top - struct (pwm_led_top.vhd)]", 1, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+// Elapsed time: 11 seconds
+selectCodeEditor("pwm_led_top.vhd", 94, 176); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("pwm_led_top.vhd", 94, 176, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "pwm_led_top.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
