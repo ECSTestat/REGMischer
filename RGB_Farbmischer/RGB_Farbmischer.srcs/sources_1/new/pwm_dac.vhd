@@ -46,7 +46,8 @@ port (
 end pwm_dac;
 
 architecture rtl of pwm_dac is
-   signal ref_cnt_enb : unsigned((P-1) downto 0);
+   --signal ref_cnt_enb : unsigned(log2(P-1) downto 0);
+   signal ref_cnt_enb : unsigned(32 downto 0);
    signal ref_cnt     : unsigned(N downto 0);
       
 begin

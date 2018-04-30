@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../RGB_Farbmischer.srcs/sources_1/new/Sync.vhd"
+vhdl xil_defaultlib  "../../../RGB_Farbmischer.srcs/sources_1/new/dim_log.vhd"
+vhdl xil_defaultlib  "../../../RGB_Farbmischer.srcs/sources_1/new/Rstsync.vhd"
+vhdl xil_defaultlib  "../../../RGB_Farbmischer.srcs/sources_1/new/pwm_dac.vhd"
+vhdl xil_defaultlib  "../../../RGB_Farbmischer.srcs/sources_1/new/Ctrl.vhd"
+vhdl xil_defaultlib  "../../../RGB_Farbmischer.srcs/sources_1/imports/new/pwm_led_top.vhd"
+
+# Do not sort compile order
+nosort
