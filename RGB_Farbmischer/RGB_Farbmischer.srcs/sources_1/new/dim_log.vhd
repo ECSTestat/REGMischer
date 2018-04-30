@@ -52,9 +52,9 @@ begin
  dim_logic: process(rst_pi, clk_pi)
  begin
     if rst_pi = '1' then
-        led_value_r_po <= (others => '0');
-        led_value_g_po <= (others => '0');
-        led_value_b_po <= (others => '0');
+        led_value_r_po <= (others => '1');
+        led_value_g_po <= (others => '1');
+        led_value_b_po <= (others => '1');
         value_red   <= (others => '0');
         value_green <= (others => '0'); 
         value_blue <= (others => '0');
@@ -79,12 +79,12 @@ begin
         end if;
         --Switch0 enabled
         if act_sync_pi(0) = '1' then
-            if value_red < 2**5-2 and dim_up_pi = '1' then
-                value_red <= value_red + 1;
-            elsif value_red > 0 and dim_down_pi = '1' then
-                value_red <= value_red - 1;                        
+            if value_blue < 2**3-2 and dim_up_pi = '1' then
+                value_blue <= value_blue + 1;
+            elsif value_blue > 0 and dim_down_pi = '1' then
+                value_blue <= value_blue - 1;                        
             end if;
-            led_value_r_po <= std_logic_vector(value_red);                        
+            led_value_b_po <= std_logic_vector(value_blue);                        
         end if;
     end if;
   end process;

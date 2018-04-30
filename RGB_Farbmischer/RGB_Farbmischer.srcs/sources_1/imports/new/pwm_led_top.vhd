@@ -22,7 +22,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
-use ieee.math_real.all;
+--use ieee.math_real.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -37,9 +37,9 @@ entity pwm_led_top is
   generic(
     CLK_FRQ : integer := 125_000_000; -- 125 MHz
     DAC_FRQ : integer := 20_000; -- 20 kHz
-    N_RED : integer := 5; -- DAC Res Red
+    N_RED   : integer := 5; -- DAC Res Red
     N_GREEN : integer := 4; -- DAC Res Green
-    N_BLUE : integer := 3 -- DAC Res Blue
+    N_BLUE  : integer := 3 -- DAC Res Blue
   );
   port(
     rst_pi : in std_logic; -- BTN_0
@@ -168,7 +168,7 @@ begin
          rst_pi       => rst_loc,
          clk_pi       => clk_pi ,
          led_value_pi => led_value_r,
-         led_po       => led_po(0)
+         led_po       => led_po(2)
          );
   --instance "pwm_dac_GREEN"
   u_pwm_dac_g: pwm_dac
@@ -192,6 +192,6 @@ begin
      rst_pi       => rst_loc,
      clk_pi       => clk_pi ,
      led_value_pi => led_value_b,
-     led_po       => led_po(2)
+     led_po       => led_po(0)
             );
 end struct;
