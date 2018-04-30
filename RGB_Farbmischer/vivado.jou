@@ -68,3 +68,21 @@ launch_runs synth_1
 wait_on_run synth_1
 launch_runs impl_1
 wait_on_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROGRAM.FILE {C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.runs/impl_1/pwm_led_top.bit} [lindex [get_hw_devices xc7z010_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z010_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROGRAM.FILE {C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.runs/impl_1/pwm_led_top.bit} [lindex [get_hw_devices xc7z010_1] 0]
+program_hw_devices [lindex [get_hw_devices xc7z010_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]

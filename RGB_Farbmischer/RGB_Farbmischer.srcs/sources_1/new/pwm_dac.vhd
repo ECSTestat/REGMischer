@@ -64,7 +64,7 @@ begin
             else
                 ref_cnt <= (others => '0');
             end if;
-            if ref_cnt>unsigned(led_value_pi) then
+            if ref_cnt<unsigned(led_value_pi) then
                led_po <= '1';
             else
                 led_po <= '0';

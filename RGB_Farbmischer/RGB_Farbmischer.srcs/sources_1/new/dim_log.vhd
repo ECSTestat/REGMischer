@@ -52,9 +52,9 @@ begin
  dim_logic: process(rst_pi, clk_pi)
  begin
     if rst_pi = '1' then
-        led_value_r_po <= (others => '1');
-        led_value_g_po <= (others => '1');
-        led_value_b_po <= (others => '1');
+        led_value_r_po <= (others => '0');
+        led_value_g_po <= (others => '0');
+        led_value_b_po <= (others => '0');
         value_red   <= (others => '0');
         value_green <= (others => '0'); 
         value_blue <= (others => '0');
