@@ -47,7 +47,8 @@ end pwm_dac;
 
 architecture rtl of pwm_dac is
    constant c_psb     : natural := natural(ceil(log2(real(P))));
-   signal ref_cnt_enb : unsigned(c_psb-1 downto 0);
+   signal pre_cnt : unsigned(c_psb-1 downto 0);
+   signal ref_cnt_enb : std_logic;
    signal ref_cnt     : unsigned(N downto 0);
       
 begin
@@ -56,21 +57,27 @@ begin
         if (rst_pi = '1') then 
             led_po <= '0';
         elsif (rising_edge(clk_pi)) then
-            if (ref_cnt_enb < P) then
-                ref_cnt_enb <= ref_cnt_enb + 1;
-            elsif (ref_cnt < (2**N)-2) then
-                ref_cnt <= ref_cnt + 1;
-                ref_cnt_enb <= (others => '0');
+            if (pre_cnt < P-1) then
+                pre_cnt <= pre_cnt + 1;
             else
-                ref_cnt <= (others => '0');
+                pre_cnt <= (others => '0');
+                ref_cnt_enb <= '1';
             end if;
             if ref_cnt<unsigned(led_value_pi) then
-               led_po <= '1';
+                led_po <= '1';
             else
                 led_po <= '0';
-            end if;      
-        
+            end if; 
         end if;
+    end process;
+    ref_cnt_e:process(ref_cnt_enb)
+    begin
+    ref_cnt_enb <= '0';
+    if (ref_cnt < (2**N)-2) then
+        ref_cnt <= ref_cnt + 1;
+    else
+        ref_cnt <= (others => '0');
+    end if;    
     end process;
 
 end rtl;
