@@ -1,0 +1,1 @@
+-wto "92f0c4fb33dd4f879a89c6bdcab35cf7" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "tb_pwm_led_top_behav" "xil_defaultlib.tb_pwm_led_top" -log "elaborate.log" 

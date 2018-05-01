@@ -22,7 +22,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
---use ieee.math_real.all;
+use ieee.math_real.all;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -46,8 +46,8 @@ port (
 end pwm_dac;
 
 architecture rtl of pwm_dac is
-   --signal ref_cnt_enb : unsigned(log2(P-1) downto 0);
-   signal ref_cnt_enb : unsigned(10 downto 0);
+   constant c_psb     : natural := natural(ceil(log2(real(P))));
+   signal ref_cnt_enb : unsigned(c_psb-1 downto 0);
    signal ref_cnt     : unsigned(N downto 0);
       
 begin

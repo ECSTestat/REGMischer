@@ -19,19 +19,11 @@
 ----------------------------------------------------------------------------------
 
 
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+library ieee;
+use ieee.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
---use ieee.math_real.all;
+use ieee.math_real.all;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity pwm_led_top is
   generic(
@@ -162,7 +154,7 @@ begin
   u_pwm_dac_r: pwm_dac
   generic map (
         N => N_RED,
-        P => 201
+        P => natural(round(real(CLK_FRQ)/real(DAC_FRQ*(2**N_RED-1))))
   )
   port map (     
          rst_pi       => rst_loc,
@@ -174,7 +166,7 @@ begin
   u_pwm_dac_g: pwm_dac
   generic map (
      N => N_GREEN,
-     P => 416
+     P => natural(round(real(CLK_FRQ)/real(DAC_FRQ*(2**N_GREEN-1))))
   )
   port map (     
      rst_pi       => rst_loc,
@@ -186,7 +178,7 @@ begin
  u_pwm_dac_b: pwm_dac
   generic map (
      N => N_BLUE,
-     P => 893
+     P => natural(round(real(CLK_FRQ)/real(DAC_FRQ*(2**N_BLUE-1))))
    )
   port map (     
      rst_pi       => rst_loc,

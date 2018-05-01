@@ -5,6 +5,7 @@ vhdl xil_defaultlib  "../../../RGB_Farbmischer.srcs/sources_1/new/Rstsync.vhd"
 vhdl xil_defaultlib  "../../../RGB_Farbmischer.srcs/sources_1/new/pwm_dac.vhd"
 vhdl xil_defaultlib  "../../../RGB_Farbmischer.srcs/sources_1/new/Ctrl.vhd"
 vhdl xil_defaultlib  "../../../RGB_Farbmischer.srcs/sources_1/imports/new/pwm_led_top.vhd"
+vhdl xil_defaultlib  "../../../../../tb_pwm_led_top.vhd"
 
 # Do not sort compile order
 nosort
