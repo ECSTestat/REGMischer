@@ -90,3 +90,44 @@ source tb_pwm_led_top.tcl
 run all
 restart
 run all
+close_sim
+launch_simulation
+source tb_pwm_led_top.tcl
+run all
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+current_design synth_1
+close_design
+open_run synth_1 -name synth_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+relaunch_sim
+run all
+close_sim
+launch_simulation
+source tb_pwm_led_top.tcl
+run all
+restart
+run all
+restart
+run all
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+close_sim
+launch_simulation
+source tb_pwm_led_top.tcl
+run all
+relaunch_sim
+run all
