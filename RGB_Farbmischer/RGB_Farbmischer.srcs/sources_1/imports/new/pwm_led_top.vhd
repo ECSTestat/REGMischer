@@ -58,6 +58,9 @@ architecture struct of pwm_led_top is
       );
   end component;
   component Sync 
+  generic(
+      CLK_FRQ : integer := CLK_FRQ 
+      );
      port (
         rst_pi       : in  std_logic;
         clk_pi       : in  std_logic;
