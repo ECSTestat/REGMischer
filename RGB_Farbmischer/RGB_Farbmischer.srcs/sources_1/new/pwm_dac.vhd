@@ -59,6 +59,7 @@ begin
         elsif (rising_edge(clk_pi)) then
             if (pre_cnt < P-1) then
                 pre_cnt <= pre_cnt + 1;
+                ref_cnt_enb <= '0';
             else
                 pre_cnt <= (others => '0');
                 ref_cnt_enb <= '1';
@@ -72,11 +73,12 @@ begin
         if (rst_pi = '1') then 
             ref_cnt <= (others => '0');
         elsif (rising_edge(clk_pi)) then
-            ref_cnt_enb <= '0';
-            if (ref_cnt < (2**N)-2) then
-                ref_cnt <= ref_cnt + 1;
-            else
-                ref_cnt <= (others => '0');
+            if ref_cnt_enb = '1' then
+                if (ref_cnt < (2**N)-1)then
+                    ref_cnt <= ref_cnt + 1;
+                else
+                    ref_cnt <= (others => '0');
+                end if;
             end if; 
         end if;   
     end process;

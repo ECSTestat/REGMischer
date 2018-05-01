@@ -2,16 +2,47 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Tue May 01 12:51:51 2018
-# Process ID: 720
+# Start of session at: Tue May 01 15:10:48 2018
+# Process ID: 352
 # Current directory: C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8308 C:\Tech_Unterlagen\ECS_Testat\RGB_Farbmischer\RGB_Farbmischer.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4844 C:\Tech_Unterlagen\ECS_Testat\RGB_Farbmischer\RGB_Farbmischer.xpr
 # Log file: C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/vivado.log
 # Journal file: C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.xpr
-open_run synth_1 -name synth_1
+launch_simulation
+source tb_pwm_led_top.tcl
+run all
+restart
+run all
+close_sim
+launch_simulation
+source tb_pwm_led_top.tcl
+run all
+close_sim
+launch_simulation
+source tb_pwm_led_top.tcl
+run all
+close_sim
+launch_simulation
+source tb_pwm_led_top.tcl
+run all
+close_sim
+launch_simulation
+source tb_pwm_led_top.tcl
+run all
+close_sim
+launch_simulation
+source tb_pwm_led_top.tcl
+run all
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
 open_hw
 connect_hw_server
 open_hw_target
@@ -22,110 +53,3 @@ set_property PROBES.FILE {} [lindex [get_hw_devices xc7z010_1] 0]
 set_property PROGRAM.FILE {C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.runs/impl_1/pwm_led_top.bit} [lindex [get_hw_devices xc7z010_1] 0]
 program_hw_devices [lindex [get_hw_devices xc7z010_1] 0]
 refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
-add_files -norecurse C:/Tech_Unterlagen/tb_pwm_led_top.vhd
-add_files -fileset sim_1 -norecurse C:/Tech_Unterlagen/tb_pwm_led_top.vhd
-remove_files  C:/Tech_Unterlagen/tb_pwm_led_top.vhd
-update_compile_order -fileset sources_1
-launch_simulation
-source tb_pwm_led_top.tcl
-run all
-reset_run synth_1
-launch_runs synth_1
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1
-wait_on_run synth_1
-run all
-close_sim
-launch_simulation
-source tb_pwm_led_top.tcl
-run all
-launch_runs impl_1
-wait_on_run impl_1
-open_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream
-wait_on_run impl_1
-set_property PROBES.FILE {} [lindex [get_hw_devices xc7z010_1] 0]
-set_property PROGRAM.FILE {C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.runs/impl_1/pwm_led_top.bit} [lindex [get_hw_devices xc7z010_1] 0]
-program_hw_devices [lindex [get_hw_devices xc7z010_1] 0]
-refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
-close_sim
-launch_simulation
-source tb_pwm_led_top.tcl
-run all
-run all
-restart
-run all
-close_sim
-launch_simulation
-source tb_pwm_led_top.tcl
-run all
-restart
-run all
-close_sim
-launch_simulation
-source tb_pwm_led_top.tcl
-run all
-reset_run synth_1
-launch_runs synth_1
-wait_on_run synth_1
-current_design synth_1
-close_design
-open_run synth_1 -name synth_1
-reset_run synth_1
-launch_runs synth_1
-wait_on_run synth_1
-launch_runs impl_1
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream
-wait_on_run impl_1
-reset_run synth_1
-launch_runs synth_1
-wait_on_run synth_1
-relaunch_sim
-run all
-close_sim
-launch_simulation
-source tb_pwm_led_top.tcl
-run all
-restart
-run all
-restart
-run all
-reset_run synth_1
-launch_runs synth_1
-wait_on_run synth_1
-close_design
-open_run synth_1 -name synth_1
-close_sim
-launch_simulation
-source tb_pwm_led_top.tcl
-run all
