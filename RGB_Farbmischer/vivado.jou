@@ -84,3 +84,9 @@ run all
 run all
 restart
 run all
+close_sim
+launch_simulation
+source tb_pwm_led_top.tcl
+run all
+restart
+run all
