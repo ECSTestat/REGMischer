@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1525174684">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1525179250">
   <File Type="RDS-PROPCONSTRS" Name="pwm_led_top_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="pwm_led_top.tcl"/>
   <File Type="RDS-RDS" Name="pwm_led_top.vds"/>
