@@ -2,8 +2,8 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Tue May 01 15:26:56 2018
-# Process ID: 10996
+# Start of session at: Wed May 02 09:30:58 2018
+# Process ID: 9476
 # Current directory: C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.runs/synth_1
 # Command line: vivado.exe -log pwm_led_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pwm_led_top.tcl
 # Log file: C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.runs/synth_1/pwm_led_top.vds
@@ -15,56 +15,56 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 7904 
+INFO: Helper process launched with PID 1284 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 276.773 ; gain = 66.965
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 276.941 ; gain = 66.828
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'pwm_led_top' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/imports/new/pwm_led_top.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'pwm_led_top' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/imports/new/pwm_led_top.vhd:42]
 	Parameter CLK_FRQ bound to: 125000000 - type: integer 
 	Parameter DAC_FRQ bound to: 20000 - type: integer 
 	Parameter N_RED bound to: 5 - type: integer 
 	Parameter N_GREEN bound to: 4 - type: integer 
 	Parameter N_BLUE bound to: 3 - type: integer 
 	Parameter RPL bound to: 3 - type: integer 
-INFO: [Synth 8-3491] module 'Rstsync' declared at 'C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/Rstsync.vhd:14' bound to instance 'u_Rstsync' of component 'Rstsync' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/imports/new/pwm_led_top.vhd:116]
-INFO: [Synth 8-638] synthesizing module 'Rstsync' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/Rstsync.vhd:25]
+INFO: [Synth 8-3491] module 'Rstsync' declared at 'C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/Rstsync.vhd:15' bound to instance 'u_Rstsync' of component 'Rstsync' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/imports/new/pwm_led_top.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'Rstsync' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/Rstsync.vhd:26]
 	Parameter RPL bound to: 3 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'Rstsync' (1#1) [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/Rstsync.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'Rstsync' (1#1) [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/Rstsync.vhd:26]
 	Parameter CLK_FRQ bound to: 125000000 - type: integer 
-INFO: [Synth 8-3491] module 'Sync' declared at 'C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/Sync.vhd:15' bound to instance 'u_sync' of component 'Sync' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/imports/new/pwm_led_top.vhd:124]
+INFO: [Synth 8-3491] module 'Sync' declared at 'C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/Sync.vhd:15' bound to instance 'u_sync' of component 'Sync' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/imports/new/pwm_led_top.vhd:120]
 INFO: [Synth 8-638] synthesizing module 'Sync' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/Sync.vhd:29]
 	Parameter CLK_FRQ bound to: 125000000 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'Sync' (2#1) [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/Sync.vhd:29]
-INFO: [Synth 8-3491] module 'Ctrl' declared at 'C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/Ctrl.vhd:34' bound to instance 'u_ctrl' of component 'Ctrl' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/imports/new/pwm_led_top.vhd:135]
-INFO: [Synth 8-638] synthesizing module 'Ctrl' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/Ctrl.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'Ctrl' (3#1) [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/Ctrl.vhd:45]
-INFO: [Synth 8-3491] module 'dim_log' declared at 'C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/dim_log.vhd:34' bound to instance 'u_dim_log' of component 'dim_log' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/imports/new/pwm_led_top.vhd:145]
-INFO: [Synth 8-638] synthesizing module 'dim_log' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/dim_log.vhd:47]
-INFO: [Synth 8-256] done synthesizing module 'dim_log' (4#1) [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/dim_log.vhd:47]
+INFO: [Synth 8-3491] module 'Ctrl' declared at 'C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/Ctrl.vhd:16' bound to instance 'u_ctrl' of component 'Ctrl' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/imports/new/pwm_led_top.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'Ctrl' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/Ctrl.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'Ctrl' (3#1) [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/Ctrl.vhd:27]
+INFO: [Synth 8-3491] module 'dim_log' declared at 'C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/dim_log.vhd:16' bound to instance 'u_dim_log' of component 'dim_log' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/imports/new/pwm_led_top.vhd:141]
+INFO: [Synth 8-638] synthesizing module 'dim_log' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/dim_log.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'dim_log' (4#1) [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/dim_log.vhd:29]
 	Parameter N bound to: 5 - type: integer 
 	Parameter P bound to: 202 - type: integer 
-INFO: [Synth 8-3491] module 'pwm_dac' declared at 'C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/pwm_dac.vhd:35' bound to instance 'u_pwm_dac_r' of component 'pwm_dac' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/imports/new/pwm_led_top.vhd:157]
-INFO: [Synth 8-638] synthesizing module 'pwm_dac' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/pwm_dac.vhd:48]
+INFO: [Synth 8-3491] module 'pwm_dac' declared at 'C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/pwm_dac.vhd:17' bound to instance 'u_pwm_dac_r' of component 'pwm_dac' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/imports/new/pwm_led_top.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'pwm_dac' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/pwm_dac.vhd:30]
 	Parameter N bound to: 5 - type: integer 
 	Parameter P bound to: 202 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'pwm_dac' (5#1) [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/pwm_dac.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'pwm_dac' (5#1) [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/pwm_dac.vhd:30]
 	Parameter N bound to: 4 - type: integer 
 	Parameter P bound to: 417 - type: integer 
-INFO: [Synth 8-3491] module 'pwm_dac' declared at 'C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/pwm_dac.vhd:35' bound to instance 'u_pwm_dac_g' of component 'pwm_dac' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/imports/new/pwm_led_top.vhd:169]
-INFO: [Synth 8-638] synthesizing module 'pwm_dac__parameterized1' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/pwm_dac.vhd:48]
+INFO: [Synth 8-3491] module 'pwm_dac' declared at 'C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/pwm_dac.vhd:17' bound to instance 'u_pwm_dac_g' of component 'pwm_dac' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/imports/new/pwm_led_top.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'pwm_dac__parameterized1' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/pwm_dac.vhd:30]
 	Parameter N bound to: 4 - type: integer 
 	Parameter P bound to: 417 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'pwm_dac__parameterized1' (5#1) [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/pwm_dac.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'pwm_dac__parameterized1' (5#1) [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/pwm_dac.vhd:30]
 	Parameter N bound to: 3 - type: integer 
 	Parameter P bound to: 893 - type: integer 
-INFO: [Synth 8-3491] module 'pwm_dac' declared at 'C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/pwm_dac.vhd:35' bound to instance 'u_pwm_dac_b' of component 'pwm_dac' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/imports/new/pwm_led_top.vhd:181]
-INFO: [Synth 8-638] synthesizing module 'pwm_dac__parameterized3' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/pwm_dac.vhd:48]
+INFO: [Synth 8-3491] module 'pwm_dac' declared at 'C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/pwm_dac.vhd:17' bound to instance 'u_pwm_dac_b' of component 'pwm_dac' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/imports/new/pwm_led_top.vhd:177]
+INFO: [Synth 8-638] synthesizing module 'pwm_dac__parameterized3' [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/pwm_dac.vhd:30]
 	Parameter N bound to: 3 - type: integer 
 	Parameter P bound to: 893 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'pwm_dac__parameterized3' (5#1) [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/pwm_dac.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'pwm_led_top' (6#1) [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/imports/new/pwm_led_top.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'pwm_dac__parameterized3' (5#1) [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/pwm_dac.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'pwm_led_top' (6#1) [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/imports/new/pwm_led_top.vhd:42]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 314.211 ; gain = 104.402
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 314.383 ; gain = 104.270
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -74,7 +74,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 314.211 ; gain = 104.402
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 314.383 ; gain = 104.270
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -90,27 +90,27 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 615.832 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 615.855 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 615.832 ; gain = 406.023
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 615.855 ; gain = 405.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 615.832 ; gain = 406.023
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 615.855 ; gain = 405.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 615.832 ; gain = 406.023
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 615.855 ; gain = 405.742
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'c_st_reg' in module 'Ctrl'
 INFO: [Synth 8-5544] ROM "n_st" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/dim_log.vhd:64]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/dim_log.vhd:73]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/dim_log.vhd:46]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.srcs/sources_1/new/dim_log.vhd:55]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -122,7 +122,7 @@ INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To p
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'c_st_reg' using encoding 'sequential' in module 'Ctrl'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 615.832 ; gain = 406.023
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 615.855 ; gain = 405.742
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -264,7 +264,7 @@ WARNING: [Synth 8-3332] Sequential element (u_pwm_dac_b/ref_cnt_reg[3]) is unuse
 WARNING: [Synth 8-3332] Sequential element (u_pwm_dac_g/ref_cnt_reg[4]) is unused and will be removed from module pwm_led_top.
 WARNING: [Synth 8-3332] Sequential element (u_pwm_dac_r/ref_cnt_reg[5]) is unused and will be removed from module pwm_led_top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 615.832 ; gain = 406.023
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 615.855 ; gain = 405.742
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -279,10 +279,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 615.832 ; gain = 406.023
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 615.855 ; gain = 405.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 615.832 ; gain = 406.023
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 615.855 ; gain = 405.742
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -294,7 +294,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 615.832 ; gain = 406.023
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 615.855 ; gain = 405.742
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -318,7 +318,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 615.832 ; gain = 406.023
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 615.855 ; gain = 405.742
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -331,7 +331,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 615.832 ; gain = 406.023
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 615.855 ; gain = 405.742
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -343,25 +343,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 615.832 ; gain = 406.023
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 615.855 ; gain = 405.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 615.832 ; gain = 406.023
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 615.855 ; gain = 405.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 615.832 ; gain = 406.023
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 615.855 ; gain = 405.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 615.832 ; gain = 406.023
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 615.855 ; gain = 405.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -381,10 +381,10 @@ Report Cell Usage:
 |2     |CARRY4 |    22|
 |3     |LUT1   |    42|
 |4     |LUT2   |     4|
-|5     |LUT3   |    19|
-|6     |LUT4   |    34|
-|7     |LUT5   |    28|
-|8     |LUT6   |    76|
+|5     |LUT3   |    21|
+|6     |LUT4   |    27|
+|7     |LUT5   |    26|
+|8     |LUT6   |    79|
 |9     |FDCE   |   125|
 |10    |FDPE   |     4|
 |11    |FDRE   |     3|
@@ -396,21 +396,21 @@ Report Instance Areas:
 +------+--------------+------------------------+------+
 |      |Instance      |Module                  |Cells |
 +------+--------------+------------------------+------+
-|1     |top           |                        |   368|
+|1     |top           |                        |   364|
 |2     |  u_Rstsync   |Rstsync                 |     4|
 |3     |  u_ctrl      |Ctrl                    |     8|
 |4     |  u_dim_log   |dim_log                 |    48|
 |5     |  u_pwm_dac_b |pwm_dac__parameterized3 |    33|
 |6     |  u_pwm_dac_g |pwm_dac__parameterized1 |    32|
 |7     |  u_pwm_dac_r |pwm_dac                 |    36|
-|8     |  u_sync      |Sync                    |   196|
+|8     |  u_sync      |Sync                    |   192|
 +------+--------------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 615.832 ; gain = 406.023
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 615.855 ; gain = 405.742
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 615.832 ; gain = 104.402
-Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 615.832 ; gain = 406.023
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 615.855 ; gain = 104.270
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 615.855 ; gain = 405.742
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 29 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -422,7 +422,7 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 49 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 615.832 ; gain = 406.023
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 615.855 ; gain = 405.742
 INFO: [Common 17-1381] The checkpoint 'C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.runs/synth_1/pwm_led_top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 615.832 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue May 01 15:27:31 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 615.855 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed May 02 09:31:36 2018...

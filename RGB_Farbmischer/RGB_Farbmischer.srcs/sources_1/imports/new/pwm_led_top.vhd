@@ -1,16 +1,11 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: HSLU
+-- Engineer: J.Carlen, M. von Flüe
 -- 
 -- Create Date: 24.04.2018 14:00:19
 -- Design Name: 
 -- Module Name: pwm_led_top - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
+-- Project Name: RGB_Farbmischer
 -- 
 -- Revision:
 -- Revision 0.01 - File Created
@@ -81,11 +76,11 @@ architecture struct of pwm_led_top is
   end component; 
   component dim_log
     port (
-        rst_pi       : in  std_logic;
-        clk_pi       : in  std_logic;
-        act_sync_pi  : in  std_logic_vector(2 downto 0);
-        dim_down_pi  : in  std_logic;
-        dim_up_pi    : in  std_logic;
+        rst_pi         : in  std_logic;
+        clk_pi         : in  std_logic;
+        act_sync_pi    : in  std_logic_vector(2 downto 0);
+        dim_down_pi    : in  std_logic;
+        dim_up_pi      : in  std_logic;
         led_value_r_po : out std_logic_vector(N_RED-1 downto 0);
         led_value_g_po : out std_logic_vector(N_GREEN-1 downto 0);
         led_value_b_po : out std_logic_vector(N_BLUE-1 downto 0)       
@@ -112,6 +107,7 @@ architecture struct of pwm_led_top is
  signal led_value_g                             : std_logic_vector(N_GREEN-1 downto 0);
  signal led_value_b                             : std_logic_vector(N_BLUE-1 downto 0);   
 begin
+
 -- instance "Rstsync"
   u_Rstsync: Rstsync
     port map (

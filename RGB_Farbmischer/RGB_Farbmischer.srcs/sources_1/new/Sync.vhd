@@ -1,11 +1,11 @@
 -------------------------------------------------------------------------------
 -- Entity: Sync
--- Author: von Flüe
+-- Company: HSLU
+-- Engineer: J.Carlen, M. von Flüe
+-- 
 -------------------------------------------------------------------------------
 -- Description: (ECS Testat 1)
 -- Synchronization and Debouncing for "RGB Farbmischer"
--------------------------------------------------------------------------------
--- Total # of FFs: 
 -------------------------------------------------------------------------------
 
 library ieee;
@@ -28,24 +28,25 @@ end Sync;
 
 architecture rtl of Sync is
   --Consants
+  -- timer constants 
+  -- 1/100 sec = CLK_FRQ / 100 = 10 ms
   constant c_blank_time_10  : unsigned(20 downto 0) := to_unsigned(CLK_FRQ/100-1, 21);
-
   -- synchronization signals
-  signal enca_reg : std_logic_vector(1 downto 0); 
-  signal encb_reg : std_logic_vector(1 downto 0); 
-  signal enc_synca  : std_logic;   
-  signal enc_syncb  : std_logic;   
-  signal actsw0_reg  : std_logic_vector(1 downto 0); 
-  signal actsw1_reg  : std_logic_vector(1 downto 0);
-  signal actsw2_reg  : std_logic_vector(1 downto 0);  
+  signal enca_reg                 : std_logic_vector(1 downto 0); 
+  signal encb_reg                 : std_logic_vector(1 downto 0); 
+  signal enc_synca                : std_logic;   
+  signal enc_syncb                : std_logic;   
+  signal actsw0_reg               : std_logic_vector(1 downto 0); 
+  signal actsw1_reg               : std_logic_vector(1 downto 0);
+  signal actsw2_reg               : std_logic_vector(1 downto 0);  
   signal enca_cnt, encb_cnt       : unsigned(20 downto 0);
   signal debncd_enca, debncd_encb : std_logic; 
 
 begin
 
   -- output assignments
-  enc_synca   <= enca_reg(1);
-  enc_syncb   <= encb_reg(1);
+  enc_synca        <= enca_reg(1);
+  enc_syncb        <= encb_reg(1);
   act_sync_po(0)   <= actsw0_reg(1);  
   act_sync_po(1)   <= actsw1_reg(1); 
   act_sync_po(2)   <= actsw2_reg(1);       
@@ -54,23 +55,22 @@ begin
   -- sequential process: synchronization
   -- All switch inputs and encoder are synchronized. The SW input is assumed to be a
   -- constant (vector) input.
-  -- # of FF: 
   ----------------------------------------------------------------------------- 
   P_syn: process(rst_pi, clk_pi)
   begin
     if rst_pi = '1' then
-      enca_reg <= (others => '0');
-      encb_reg  <= (others => '0');
+      enca_reg   <= (others => '0');
+      encb_reg   <= (others => '0');
       actsw0_reg <= (others => '0');
       actsw1_reg <= (others => '0');
       actsw2_reg <= (others => '0');
     elsif rising_edge(clk_pi) then
       -- synchronization of the encoder A
-      enca_reg(0) <= enc_pi(0);
-      enca_reg(1) <= enca_reg(0);
+      enca_reg(0)   <= enc_pi(0);
+      enca_reg(1)   <= enca_reg(0);
       -- synchronization of the encoder B
-      encb_reg(0) <= enc_pi(1);
-      encb_reg(1) <= encb_reg(0);
+      encb_reg(0)   <= enc_pi(1);
+      encb_reg(1)   <= encb_reg(0);
       -- synchronization of switch 0
       actsw0_reg(0) <= act_pi(0);
       actsw0_reg(1) <= actsw0_reg(0);
@@ -83,11 +83,14 @@ begin
     end if;
   end process;
   
+  ----------------------------------------------------------------------------- 
+  -- sequential process: Debounce of Encoder with blanking
+  ----------------------------------------------------------------------------- 
 P_deb_enc : process(rst_pi, clk_pi)
   begin
         if rst_pi = '1' then
-        enca_cnt <= (others => '0');
-        encb_cnt <= (others => '0');
+        enca_cnt    <= (others => '0');
+        encb_cnt    <= (others => '0');
         debncd_enca <= '0';
         debncd_encb <= '0';
         deb_enc_po  <= (others => '0');

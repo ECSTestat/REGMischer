@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Wed May 02 09:36:55 2018
+# Process ID: 4068
+# Current directory: C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer
+# Command line: wbtcv.exe -mode batch -source C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/.Xil/Vivado-7808-DESKTOP-7EVIT25/PrjAr/_X_/RGB_Farbmischer.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/webtalk.log
+# Journal file: C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer\webtalk.jou
+#-----------------------------------------------------------
+source C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/.Xil/Vivado-7808-DESKTOP-7EVIT25/PrjAr/_X_/RGB_Farbmischer.hw/webtalk/labtool_webtalk.tcl -notrace

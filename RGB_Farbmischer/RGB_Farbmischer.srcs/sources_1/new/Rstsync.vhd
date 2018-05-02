@@ -1,12 +1,13 @@
 -------------------------------------------------------------------------------
 -- Entity: Rstsync
--- Author: Waj
+-- Company: HSLU
+-- Engineer: J.Carlen, M. von Flüe
+-- 
 -------------------------------------------------------------------------------
--- Description: (ECS Uebung 7)
--- Synchronizes the de-activating edge of a asynchronous active-high reset signal.
+-- Description: (ECS Testat 1)
+-- Reset-Synchronization for "RGB Farbmischer"
 -------------------------------------------------------------------------------
--- Total # of FFs: RPL+1
--------------------------------------------------------------------------------
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;

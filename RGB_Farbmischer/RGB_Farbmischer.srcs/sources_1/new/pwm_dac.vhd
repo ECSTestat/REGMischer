@@ -1,36 +1,18 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Entity: dwm_dac
+-- Company: HSLU
+-- Engineer: J.Carlen, M. von Flüe
 -- 
--- Create Date: 27.04.2018 15:23:34
--- Design Name: 
--- Module Name: pwm_dac - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-- Description: (ECS Testat 1)
+-- Switches the specific LED On/OFF for "RGB Farbmischer"
+-------------------------------------------------------------------------------
 
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
 use ieee.math_real.all;
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
 
 entity pwm_dac is
 generic (
@@ -74,7 +56,7 @@ begin
             ref_cnt <= (others => '0');
         elsif (rising_edge(clk_pi)) then
             if ref_cnt_enb = '1' then
-                if (ref_cnt < (2**N)-1)then
+                if (ref_cnt < (2**N)-2)then
                     ref_cnt <= ref_cnt + 1;
                 else
                     ref_cnt <= (others => '0');

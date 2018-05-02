@@ -1,0 +1,72 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Wed May 02 09:32:17 2018
+| Host         : DESKTOP-7EVIT25 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file pwm_led_top_control_sets_placed.rpt
+| Design       : pwm_led_top
+| Device       : xc7z010
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     9 |
+| Unused register locations in slices containing registers |    36 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               3 |            3 |
+| No           | No                    | Yes                    |             102 |           32 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              27 |            9 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------+---------------------------------+-------------------+------------------+----------------+
+|    Clock Signal   |          Enable Signal          |  Set/Reset Signal | Slice Load Count | Bel Load Count |
++-------------------+---------------------------------+-------------------+------------------+----------------+
+|  clk_pi_IBUF_BUFG |                                 |                   |                3 |              3 |
+|  clk_pi_IBUF_BUFG |                                 | rst_pi_IBUF       |                1 |              4 |
+|  clk_pi_IBUF_BUFG | u_dim_log/value_green           | u_Rstsync/rst_loc |                1 |              4 |
+|  clk_pi_IBUF_BUFG | u_pwm_dac_g/ref_cnt_enb_reg_n_0 | u_Rstsync/rst_loc |                1 |              4 |
+|  clk_pi_IBUF_BUFG | u_sync/act_sync[1]              | u_Rstsync/rst_loc |                2 |              4 |
+|  clk_pi_IBUF_BUFG | u_dim_log/value_red             | u_Rstsync/rst_loc |                2 |              5 |
+|  clk_pi_IBUF_BUFG | u_pwm_dac_r/ref_cnt_enb         | u_Rstsync/rst_loc |                1 |              5 |
+|  clk_pi_IBUF_BUFG | u_sync/act_sync[2]              | u_Rstsync/rst_loc |                2 |              5 |
+|  clk_pi_IBUF_BUFG |                                 | u_Rstsync/rst_loc |               31 |             98 |
++-------------------+---------------------------------+-------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 3      |                     1 |
+| 4      |                     4 |
+| 5      |                     3 |
+| 16+    |                     1 |
++--------+-----------------------+
+
+

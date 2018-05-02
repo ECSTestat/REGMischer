@@ -2,12 +2,25 @@
 # Vivado v2016.3 (64-bit)
 # SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
 # IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
-# Start of session at: Tue May 01 15:38:54 2018
-# Process ID: 7236
+# Start of session at: Wed May 02 08:06:07 2018
+# Process ID: 7808
 # Current directory: C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11084 C:\Tech_Unterlagen\ECS_Testat\RGB_Farbmischer\RGB_Farbmischer.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11836 C:\Tech_Unterlagen\ECS_Testat\RGB_Farbmischer\RGB_Farbmischer.xpr
 # Log file: C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/vivado.log
 # Journal file: C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/RGB_Farbmischer.xpr
+launch_simulation
+source tb_pwm_led_top.tcl
+run all
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+archive_project C:/Tech_Unterlagen/ECS_Testat/MariovonFluee_JoelCarlen_Testat.xpr.zip -temp_dir C:/Tech_Unterlagen/ECS_Testat/RGB_Farbmischer/.Xil/Vivado-7808-DESKTOP-7EVIT25 -force -include_config_settings
+close_sim
